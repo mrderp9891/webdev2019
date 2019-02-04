@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Instagram</title>
+    
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            background-color: #fafafa;
+          
+        }
+    #main{
+        width: 935px;
+        height: 768px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 42px;
+    }
+    #main-left{
+        position: absolute;
+        margin-left: 56px;
+        padding-top: 87px; 
+    }
+    #photos{
+        position: absolute;
+        margin-top: -524px;
+        margin-left: 150px;
+        width: 241px;
+        z-index: 2;
+    }
+    #main-right{
+        position: absolute;
+        background-color: #fff;
+        margin-left: 494px;
+    }
+    #logo{
+        position: absolute;
+        background-color: #fff;
+        border-style: solid;
+        border-width: 1px;
+        border-color:rgb(230, 230, 230);
+        padding-left: 79px;
+        padding-right: 78px; 
+        padding-top: 13px;
+        padding-bottom: 523px; 
+        width: 190px;
+        height: 76px;;
+        border: 1px, solid, black;
+        z-index: 1;
+    }
+    #main-right h3{
+        position: absolute;
+        width: 300px;
+        text-align: center;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 630; 
+        font-size: 17px;
+        line-height: 20px;
+        color:#999;
+        background-color:#fff;
+        margin-left: 25px;
+        margin-top: 96px;
+        z-index: 2;
+    }
+    .button {
+    position: absolute;
+	background-color:#3897f0;
+	border-radius:4px;
+	border:0px solid;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+	font-size:14px;
+    font-weight: 700;
+    height: 30px;
+    width: 268px;
+    margin-top: 155px;
+    margin-left: 43px;
+    z-index: 2;
+    }
+    #line{
+        border-color:rgba(243, 242, 242, 0.13);
+        position: absolute;
+        z-index: 2;
+        margin-top: 210px;
+        margin-left: 43px;
+        width: 105px;
+    }
+    #or{
+        position: absolute;
+        font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        background-color: #fff;
+        font-size: 13px;
+        font-weight: 500;
+        color:#999;
+        margin-top: 202px;
+        margin-left: 166px;
+        z-index: 2;
+    }
+    #line2{
+        border-color:rgba(243, 242, 242, 0.13);
+
+        position: absolute;
+        z-index: 2;
+        margin-top: 210px;
+        margin-left: 203px;
+        width: 105px;
+    }
+    .input{
+        position: absolute;
+        z-index: 2;
+        border: 1px solid rgb(240, 240, 240);
+        border-radius: 3px;
+        margin-top: 235px;
+        margin-left: 43px;
+        font-size: 12px;
+        
+        height: 37px;
+        width: 268px;
+    }
+    #f-name{
+        margin-top: 279px;
+    }
+    #u-name{
+        margin-top: 323px; 
+    }
+    #password{
+        margin-top: 367px;
+    }
+    #sign-up{
+        margin-top: 419px;
+    }
+    #policy{
+        position: absolute;
+        width: 300px;
+        text-align: center;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 400; 
+        font-size: 14px;
+        line-height: 19px;
+        color:#999;
+        background-color:#fff;
+        margin-left: 25px;
+        margin-top: 468px;
+        z-index: 2;
+    }
+    #main-right p span{
+        background-color:#fff; 
+        font-weight: 600; 
+    }
+    #main-right p span:hover{
+        cursor: pointer;
+    }    
+    #smallbox{
+        position: absolute;
+        
+        border-style: solid;
+        border-width: 1px;
+        border-color:rgb(230, 230, 230);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        padding-left: 99px;
+        padding-right: 58px; 
+        padding-top: 25px;
+        padding-bottom: 25px; 
+        width: 190px;
+        margin-top: 623px;
+        border: 1px, solid, black;
+        z-index: 1;
+    }
+    #smallbox a{
+        color: #3897f0;
+        background-color: #fff;
+        text-decoration: none;
+    }
+    #getapp{
+        position: absolute;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        width: 190px;
+        margin-top: 712px;
+        margin-left: 139px; 
+        z-index: 1;
+    }
+    #appstore{
+        margin-top: 750px;
+        width: 135px;
+    }
+    #googleplay{
+        margin-top: 750px;
+        margin-left: 5px;
+        width: 135px;
+    }
+    #microsoft{
+        margin-top: 750px;
+        margin-left: 5px;
+        height: 40px;
+
+    }
+    #main-bottom{
+        margin-left: 470px; 
+    }
+    #bottom table{
+        width: 1000px;
+        position: absolute;
+        cursor: pointer;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        color: #003569;; 
+        margin-left: 285px;
+        margin-right: auto;
+        margin-top: 116px;
+        margin-bottom: 50px;
+    }
+    #c2019{
+        color:#999;
+        cursor: text;
+    }
+    </style>
+    
+</head>
+<body>
+    
+    <div id="main">
+
+        <div id="main-left">
+            <img src="https://www.instagram.com/static/images/homepage/home-phones.png/43cc71bb1b43.png" alt="phone">
+            <div id="photos">
+                <img src="https://www.instagram.com/static/images/homepage/screenshot4.jpg/842fe5699220.jpg" alt="1-screen">
+            </div> 
+        </div>
+
+        <div id="main-right">
+            <img id="logo" src="http://www.stickpng.com/assets/images/5a4e432a2da5ad73df7efe7a.png" alt="instagram logo">
+            <h3>Sign up to see photos and videos<br> from your friends.</h3>
+            <button class="button">Log in with Facebook</button>
+            <hr id="line"> <h4 id="or">OR</h4> <hr id="line2"> 
+            <input type="email" name="Mobile Number or Email" placeholder="  Mobile Number or Email" class="input">
+            <input type="text" name="Full Name" placeholder="  Full Name" class="input" id="f-name">
+            <input type="text" name="UserName" placeholder="  Username" class="input" id="u-name">
+            <input type="text" name="Password" placeholder="  Password" class="input" id="password">
+            <button id="sign-up" class="button">Next</button>
+            <p id="policy">By signing up, you agree to our<br>
+            <span>Term .</span> Learn how we collect, use<br>and share your data in our <span>Data <br>Policy </span>and how we use cookies and<br>similar technology in our <span>Cookies<br> Policy .</span></p>
+            <p id="smallbox">Have an account? <a href=""> <span>Log in</span></a></p>
+            <p id="getapp">Get the app.</p>
+            
+        </div>
+
+        <div id="main-bottom">
+            <img id="appstore" src="https://www.instagram.com/static/images/appstore-install-badges/badge_ios_english-en.png/180ae7a0bcf7.png" alt="app store">
+            <img id="googleplay" src="https://www.instagram.com/static/images/appstore-install-badges/badge_android_english-en.png/e9cd846dc748.png" alt="app store">
+            <img id="microsoft" src="https://www.instagram.com/static/images/appstore-install-badges/badge_microsoft_english-en.png/8a9204989bce.png" alt="app store">
+        </div>
+    </div>
+
+    <div id="bottom">
+        <table>
+            <td>
+                    ABOUT US
+            </td>
+            <td>
+                    SUPPORT
+            </td>
+            <td>
+                    PRESS
+            </td>
+            <td>
+                    API
+            </td>
+            <td>
+                    JOBS
+            </td>
+            <td>
+                    PRIVACY
+            </td>
+            <td>
+                    TERMS
+            </td>
+            <td>
+                    DIRECTOR
+            </td>
+            <td>
+                    PROFILES
+            </td>
+            <td>
+                    HASHTAGS
+            </td>
+            <td>
+                    LANGUAGE
+            </td>
+            <td id="c2019">
+                    2019 INSTAGRAM
+            </td>
+        </table>
+        
+    </div>
+
+</body>
+</html>
