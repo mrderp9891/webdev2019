@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <ul>
+        {% for taskList in taskLists %}
+            <li>{{ taskList.id }}: {{ taskList.name}}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
